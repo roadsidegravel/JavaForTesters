@@ -1,9 +1,13 @@
 public class Notes {
-    //pg 60
+    //pg 94
 }
 //single comment
 /*
 block comment
+ */
+/**
+ *  JavaDoc comment
+ *  is what shows when you press ctrl q (ctrl j) on a method
  */
 // alt Enter op dingen voor importeren context menu
 // bij assertEquals message, dan expected value dan de getestte value
@@ -76,3 +80,86 @@ Logical
 // recommends book 'Domain Driven Design' (Eric Evans)
 // https://www.domainlanguage.com/ddd/
 // https://en.wikipedia.org/wiki/Domain-driven_design
+
+// this keyword refers to the current object
+
+/*
+public            accessible to any class that imports the parent class
+protected         accessible to any class in the same package, or any subclass
+private           accessible to methods in the class
+package-private   when no modifier is used then the field or method is accessible to
+the class and any class in the same package (this is the default)
+ */
+
+/*
+static - the field or method exists at the class level, not the instance level, so is
+shared by all instances and can be accessed without needing to have an instantiated
+class variable.
+final - once the field has a value it cannot be changed
+ */
+
+//public static final   often how constants are done
+
+/*
+Names tend to use camel case and start with a lowercase letter. Constants tend to be all
+uppercase, with ‘_’ to delimit words.
+has to tart with unicode character representing a letter (kinda? ook andere)
+    a-z,A-Z,_,$,...
+daarna mogen er cijfers in
+ */
+
+// you can use the package path instead of importing
+// org.junit.Assert.assertEquals(...)
+// wordt snel lang en gedoe, maar kan nuttig zijn om ze uiteen te houden
+// * voor import all classes from package
+// import ...*
+// import org.junit.Assert; (de class)
+// import static org.junit.Assert.assertEquals; (de method)
+
+// BigDecimal if you want precision, for use with currency and such
+// float (32 bit) en double (64 bit) kan rounding errors hebben
+
+// % integer remainder calculations
+// +,-,/,*,%
+// +=,-=,/=,*=,%=
+// ++,-- increment or decrement the variable
+// ++variable increment first, then use (prefix)
+// variable++ use first, then increment (postfix)
+
+// && logical and
+// || logical or
+// both shortcut, only check the second one when necessary
+
+// check, if true return first, if false return second
+// condition ? operand1 : operand2;
+// a >= b ? true : false;
+
+// can do binary bitwise operations on Integer
+// & and, | or, ^ xor, ~ invert the bits
+// &=, |=, ^=, ~=
+// bit shift
+// <<3 shift 3 to the left
+// >> shift to the right
+// >>> shift a zero into leftmost position
+
+// volgorde bewerkingen (operator precedence)
+// https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
+// nested are executed first (...(...))
+
+// Strings are immutable, stuff that looks like it changes a String,
+// actually returns a new String
+
+// arrays have a fixed size
+// the [] can be in various places, but just use after the name
+// int[] integers = new int[10];
+// int []moreInts = new int[10];
+// int evenMore[] = new int[10];
+// int[] ints1to10 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+/*
+for ( initialize statement executed once; loop condition; executed after each loop){
+// do something
+}
+ */
+
+

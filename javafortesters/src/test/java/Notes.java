@@ -162,4 +162,32 @@ for ( initialize statement executed once; loop condition; executed after each lo
 }
  */
 
+// import java.util.Arrays; has some useful array related methods
+// Arrays.copyOf(...) creates a copy, and can resize, useful for expanding
+// Arrays.copyOfRange(...) copies part of the array, can also resize by
+//      using a larger endItemCount
+// Arrays.asList convert an array to a list
+
+// multidimensional Arrays
+// int[][] for example
+
+// while(condition){...} body might never execute
+// do{...}while(condition) body will execute at least once
+// for
+// for each
+
+// Collection - a generic collection that you can add objects to
+// Set - a collection that does not allow duplicates
+// List - a collection you can access and add elements at specific index positions
+// Map - a “key, value” pair where you store an object in the collection, but can access it
+// with a unique key
+// The Collection interfaces are all in java.util
+
+// can declare it as a general Collection and then later, if needed, specify
+// voor makkelijk te wisselen tussen verschillende dingen implementeren
+// als het eerst collection laat moet ge minder aanpassen
+// ge zou ook bv python kunnen gebruiken maar we nagelen ons vastberaden
+// verder aan het kruis
+// Collection workdays;
+// workdays = new ArrayList();
 
